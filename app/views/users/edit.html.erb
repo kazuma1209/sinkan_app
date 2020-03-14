@@ -1,0 +1,21 @@
+
+
+<div class="edit">
+  <h1>設定</h1>
+  <div class="form-edit">
+    <%= form_for(@user) do |f| %>
+      <p><%= render 'shared/error_messages', object: f.object %></p>
+
+      <p><%= f.label :name,"部活/サークル名" %><p>
+      <p><%= f.text_field :name, class: 'form-control' %></p>
+
+      <p><%= f.label :email ,"メールアドレス"%></p>
+      <p><%= f.email_field :email, class: 'form-control' %></p>
+
+      <p><%=f.label :image,"プロフィール画像" %></p>
+      <p><%= f.file_field :image %></p>
+
+      <h3><%= f.submit "変更する", class: "btn btn-edit" %></h3>
+    <% end %>
+  </div>
+</div>

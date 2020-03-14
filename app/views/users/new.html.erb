@@ -1,0 +1,36 @@
+<div class="signup">
+  <div class="form-signup">
+    <%= form_for(@user) do |f| %>
+    <p>
+      <%= render 'shared/error_messages', object: f.object %>
+    </p>
+      <p>
+        <%= f.label :name ,"部活・サークル名"%>
+      </p>
+      <p>
+        <%= f.text_field :name %>
+      </p>
+      <p>
+        <%= f.label :email,"メールアドレス" %>
+      </p>
+      <p>
+        <%= f.email_field :email %>
+      </p>
+      <p>
+        <%= f.label :password ,"パスワード(6文字以上で入力)"%>
+      </p>
+      <p>
+        <%= f.password_field :password %>
+      </p>
+      <p>
+        <%= f.label :password_confirmation, "パスワード確認(6文字以上で入力)" %>
+      </p>
+      <p>
+        <%= f.password_field :password_confirmation %>
+      </p>
+      <h3>
+        <%= f.submit "アカウント作成!", class: "btn btn-signup" %>
+      </h3>
+    <% end %>
+  </div>
+</div>

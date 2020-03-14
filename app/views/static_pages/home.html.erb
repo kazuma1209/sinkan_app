@@ -1,0 +1,73 @@
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/user_info' %>
+      </section>
+      <section class="micropost_form">
+        <%= render 'shared/micropost_form' %>
+      </section>
+    </aside>
+  </div>
+<% else %>
+  <div class="top-wrapper">
+  </div>
+  <div class="active-name">
+    <h4>部活＆サークル</h4>
+    <div class="clubes">
+      <div class="clbe">
+        <div class="clbu-icon">
+          <a href="/music"><img src="/music.png"></a>
+          <h6>音楽系</h6>
+        </div>
+      </div>
+      <div class="clbe">
+        <div class="clbu-icon">
+          <a href="/sports"><img src="/sports.png"></a>
+          <h6>スポーツ</h6>
+        </div>
+      </div>
+      <div class="clbe">
+        <div class="clbu-icon">
+          <a href="/outdoor"><img src="/outdoor.png"></a>
+          <h6>アウトドア</h6>
+        </div>
+      </div>
+      <div class="clbe">
+        <div class="clbu-icon">
+          <a href="/volunteer"><img src="/volunteer.png"></a>
+          <h6>ボランティア</h6>
+        </div>
+      </div>
+      <div class="clbe">
+        <div class="clbu-icon">
+          <a href="/grobal"><img src="/global.png"></a>
+          <h6>国際交流</h6>
+        </div>
+      </div>
+      <div class="clbe">
+        <div class="clbu-icon">
+          <a href="/budo"><img src="/武道.png"></a>
+          <h6>武道</h6>
+        </div>
+      </div>
+      <div class="clbe">
+        <div class="clbu-icon">
+          <a href="/bunka"><img src="/文化.png"></a>
+          <h6>文化系</h6>
+        </div>
+      </div>
+      <div class="clbe">
+        <div class="clbu-icon">
+          <a href="/other"><img src="/その他.png"></a>
+          <h6>その他</h6>
+        </div>
+      </div>
+    </div>
+    <div class="top-user"><%= link_to "団体一覧", users_path %></div>
+  </div>
+
+  
+
+
+<% end %>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SiteTitle</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- /jQueryを読み込む -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<!-- /スクリプトを読み込む -->
+  <%= javascript_include_tag 'application' %>
+
+
+
+</head>
+  <body>
+    <header>
+      <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <% if logged_in? %>
+            <p><%= link_to "マイアカウント", current_user,class:"a "%></p>
+            <p><%= link_to "団体一覧",   users_path,class:"a "%></p>
+            <p><%= link_to "投稿する",   root_path,class:"a "%></p>
+            <p><%= link_to "設定",   edit_user_path(current_user),class:"a "%></p>
+            <p><%= link_to "ログアウト", logout_path, method: :delete,class:"a "%></p>
+
+            <% else %>
+            <p><%= link_to "TOP",   '/',class:"a "%></p>
+            <p><%= link_to "団体一覧",   users_path,class:"a "%></p>
+            <p><%= link_to "ログイン",   '/login',class:"a "%></p>
+            <p><%= link_to "新規部活登録",   '/signup',class:"a "%></p>
+            <p><%= link_to "ビラ一覧", '#', class:"a" %></p>
+            <% end %>
+          </div>
+      </div>
+      <div class="header-logo">
+        新大情報
+      </div>
+    </header>
+    <div class="container">
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+      <%= yield %>
+    </div>
+  </body>
+</html>

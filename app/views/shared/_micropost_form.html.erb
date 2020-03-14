@@ -1,0 +1,12 @@
+<%= form_for(@micropost) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_area :content, placeholder: "新歓情報など投稿しよう!（文字数:140字以下）" %>
+  </div>
+  <%= f.submit "Post", class: "btn btn-micropost" %>
+  <p>
+    <span class="picture">
+      <%= f.file_field :picture %>
+    </span>
+  </p>
+<% end %>
