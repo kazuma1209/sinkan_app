@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get  '/budo', to: 'static_pages#budo'
   get  '/bunka', to: 'static_pages#bunka'
   get  '/other', to: 'static_pages#other'
+  get '/micropost_all', to:'static_pages#micropost_all'
   get  '/signup',  to: 'users#new'
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'

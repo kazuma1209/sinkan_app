@@ -345,6 +345,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    rinku (2.0.6)
     ruby-progressbar (1.10.1)
     ruby_dep (1.5.0)
     sass (3.7.4)
@@ -421,6 +422,7 @@ DEPENDENCIES
   puma (= 3.9.1)
   rails (= 5.1.6)
   rails-controller-testing (= 1.0.2)
+  rinku
   sass-rails (= 5.0.6)
   spring (= 2.0.2)
   spring-watcher-listen (= 2.0.1)

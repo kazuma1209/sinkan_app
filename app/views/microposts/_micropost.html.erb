@@ -1,9 +1,12 @@
 <li id="micropost-<%= micropost.id %>">
 
-  <img src="<%= @user.image %>" class="img-micropost">
+
   <span class="user"><%= link_to micropost.user.name, micropost.user %></span>
+
   <span class="content">
-    <%= micropost.content %>
+
+    <%= Rinku.auto_link(micropost.content, :all, 'target="_blank"').html_safe %>
+
     <%= image_tag micropost.picture.url if micropost.picture? %>
   </span>
   <span class="timestamp">

@@ -67,7 +67,24 @@
     <div class="top-user"><%= link_to "団体一覧", users_path %></div>
   </div>
 
+  <div class="new-post">
+    <h4>新しい投稿</h4>
+    <ol class="microposts">
+      <%= render @microposts %>
+    </ol>
+    <h6><a href="/micropost_all">もっと見る！</a></h6>
+  </div>
+
+  <div class="ivent">
+    <h4>黎明祭情報</h4>
+  </div>
+  <div class="ivent-info">
+  まもなく追加！もう少し待ってね
+  </div>
+  <div class="ivent-info">
+  <i class="fas fa-tools"></i>
   
+  </div>
 
 
 <% end %>

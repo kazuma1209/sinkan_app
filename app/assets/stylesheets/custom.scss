@@ -10,6 +10,7 @@ header {
   padding: .8em 1.2rem;
   background-color: black;
 }
+
 .header-logo{
   margin: 0 auto;
   color:white;
@@ -103,7 +104,71 @@ header {
 }
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url("/toppic.jpg");
+  background-image: url("/大学生.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  max-width: 100%;
+}
+.all-bunka{
+  padding: 180px 0 100px 0;
+  background-image: url("/文化.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  max-width: 100%;
+}
+.all-music{
+  padding: 180px 0 100px 0;
+  background-image: url("/ライブ.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  max-width: 100%;
+}
+.all-sports{
+  padding: 180px 0 100px 0;
+  background-image: url("/運動.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  max-width: 100%;
+}
+.all-outdoor{
+  padding: 180px 0 100px 0;
+  background-image: url("/キャンプ.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  max-width: 100%;
+}
+.all-volunteer{
+  padding: 180px 0 100px 0;
+  background-image: url("/ボランティア.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  max-width: 100%;
+}
+.all-grobal{
+  padding: 180px 0 100px 0;
+  background-image: url("/グローバル.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  max-width: 100%;
+}
+.all-budo{
+  padding: 180px 0 100px 0;
+  background-image: url("/ぶどう.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  max-width: 100%;
+}
+.all-other{
+  padding: 180px 0 100px 0;
+  background-image: url("/その他.jpg");
   background-size: cover;
   color: white;
   text-align: center;
@@ -253,15 +318,18 @@ object-fit: cover;
   padding: 0;
   li {
     padding: 10px 0;
-    border-top: 1px solid #e8e8e8;
+    border-top: 3px solid #e8e8e8;
   }
   .user {
     margin-top: 0px;
     padding-top: 0;
+    color:red;
+    font-size: 14px;
   }
   .content {
     display: block;
-    margin-left: 60px;
+    margin-left: 30px;
+    font-size: 20px;
     img {
       display: block;
       padding: 5px 0;
@@ -289,6 +357,7 @@ aside {
 
 span.picture {
   margin-top: 10px;
+
   input {
     border: 0;
   }
@@ -309,7 +378,8 @@ span.picture {
   li {
     overflow: auto;
     padding: 20px 0;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid #e8e8e8;
+    border-top: 3px solid #e8e8e8;
 
 
   }
@@ -323,6 +393,60 @@ span.picture {
   display: block;
 }
 
+.new-post{
+  h6{
+    text-align: right;
+    margin-bottom: 0px;
+    font-size: 10px;
+    }
+}
+
+
+.user-right{
+  float: right;
+
+}
+.user-left{
+  float: left;
+  padding-top:20px;
+}
+
+.fa-line{
+  color:#32cd32;
+}
+.fa-twitter{
+  color:#1e90ff;
+}
+.fa-instagram{
+  color:#ff00ff;
+}
+ul{
+  list-style: none;
+  padding-left: 0px;
+}
+
+.container-user{
+  width:100%;
+  height: 65px;
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+
+}
+.text-upload{
+  text-align: center;
+  font-size:10px;
+}
+.alert{
+  color:#32cd32;
+}
+.ivent-info{
+  color:#20b2aa;
+  text-align: center;
+  font-size: 20px;
+}
+.fa-tools{
+  font-size: 70px
+}
 
 /* Users index */
 }

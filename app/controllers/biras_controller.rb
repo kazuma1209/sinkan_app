@@ -1,0 +1,2 @@
+class BirasController < ApplicationController
+end

@@ -3,10 +3,15 @@
   <div class="field">
     <%= f.text_area :content, placeholder: "新歓情報など投稿しよう!（文字数:140字以下）" %>
   </div>
-  <%= f.submit "Post", class: "btn btn-micropost" %>
   <p>
     <span class="picture">
+      <div class="text-upload">
+        ↓画像を追加↓
+      </div>
       <%= f.file_field :picture %>
     </span>
   </p>
+
+  <%= f.submit "投稿する！", class: "btn btn-micropost" %>
+
 <% end %>
